@@ -1,0 +1,72 @@
+body{
+  background-color: #130f0d;
+  color: #FFF;
+}
+
+.boards{
+  display: flex;
+  margin-top: 2rem;
+  gap: 10px;
+}
+
+.board{
+  background: #141316;
+  border: 1px solid #FD951F11;
+  border-radius: 4px;
+  margin: 0 1rem;
+}
+.board h3{
+  padding: 1rem;
+  color: #FD951FCC;
+}
+
+.dropzone{
+  padding: 1rem;
+  min-width: 300px;
+  min-height: 200px;
+}
+
+.card{
+  padding: 1rem;
+  box-shadow: 0 2px 2px -1px #FD951FCC;
+  width: 250px;
+  margin: 1.7rem 0;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  background-color: #1A1A1C;
+}
+
+.status{
+  width: 30px;
+  height: 8px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+.status.green{
+  background: #23D2AC;
+}
+.status.blue{
+  background: #33ADFF;
+}
+.status.red{
+  background: rgb(255, 0, 0)
+}
+
+.highlight{
+  background-color: #FD951F08;
+}
+
+/* transição suave */
+.card, .dropzone{
+  transition: .4s;
+}
+
+.is-dragging{
+  cursor: move;
+  opacity: 0.3;
+}
+
+.over{
+  background-color: #4CD13722;
+}
